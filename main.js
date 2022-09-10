@@ -31,6 +31,15 @@ for (let i = 0; i < 3; i++) {
 for (let i = 0; i < 3; i++) {
   numberSide += numbers.charAt(Math.random() * numbers.length);
 }
+class VehicleData {
+  constructor(ownerName, maker, model, year) {
+    this.ownerName = ownerName;
+    this.maker = maker;
+    this.model = model;
+    this.year = year;
+  }
+  newVehicleData = new VehicleData(ownerName, maker, model, year);
+}
 
 function getRegistration() {
   if (!ownerName || !maker || !model || !year) {
@@ -45,7 +54,7 @@ getManual.addEventListener("click", () => {
   } else {
     manualRegistrationDiv.classList.add("hide");
   }
-
+  regNumber.textContent = "###-###";
   btnGenerate.addEventListener("click", () => {
     regNumber.textContent = manualInputField.value.toUpperCase();
     btnProceedOrAvailability.classList.remove("hide");
