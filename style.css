@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  background-color: chocolate;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+main {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.section-input {
+  margin-top: 3rem;
+}
+
+.section-input h2 {
+  font-size: 2.4rem;
+  color: chocolate;
+  margin-bottom: 2rem;
+}
+
+.section-input label {
+  display: inline-block;
+  width: 20rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  vertical-align: auto;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 20rem;
+  height: 3rem;
+  border: 1px solid rgba(210, 105, 30, 0.602);
+  border-radius: 3px;
+  padding: 0 1rem;
+  font-family: inherit;
+}
+
+.radio-options {
+  margin: 2rem 0;
+}
+
+button {
+  background-color: chocolate;
+  font-family: inherit;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  margin: 2rem 0;
+  cursor: pointer;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+button:hover,
+button:active {
+  filter: opacity(0.8);
+}
+.radio-options input[type="radio"] {
+  width: 2rem;
+  height: 2rem;
+  accent-color: blue;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+/**********/
+
+.section-registration {
+  background: rgba(210, 105, 30, 0.05);
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.registration-plate {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #123998;
+  border-radius: 5px;
+}
+
+.plate-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #123998;
+  width: 8rem;
+}
+
+.plate-logo img {
+  width: 100%;
+}
+
+.plate-logo p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#registration-number {
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.result-txt {
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none;
+}

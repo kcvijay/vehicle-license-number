@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Registration</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vehicle Registration</h1>
+    </header>
+    <main>
+      <section class="section-input">
+        <h2>Insert Vehicle Data</h2>
+        <div>
+          <label for="owner-name">Owner's Full Name:</label>
+          <input
+            type="text"
+            id="owner-name"
+            placeholder="For ex. John Doe"
+            required
+          />
+        </div>
+        <div>
+          <label for="maker">Vehicle Maker:</label>
+          <input
+            type="text"
+            id="maker"
+            placeholder="For ex. Volkswagen"
+            required
+          />
+        </div>
+        <div>
+          <label for="model">Vehicle Model:</label>
+          <input
+            type="text"
+            id="model"
+            placeholder="For ex. Tiguan 1.8 Petrol"
+            required
+          />
+        </div>
+        <div>
+          <label for="year">Registered Year:</label>
+          <input type="number" id="year" required />
+        </div>
+        <div class="radio-options">
+          <div>
+            <input
+              type="radio"
+              id="get-automatic"
+              name="generate"
+              class="btnOption"
+            />
+            <label for="get-automatic">Generate Automatically</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="get-manual"
+              name="generate"
+              class="btnOption"
+            />
+            <label for="get-manual">Generate Manually (700€)</label>
+          </div>
+        </div>
+        <div class="manual-registration hide">
+          <label for="input-manually" style="font-weight: bold"
+            >Input Registration No.:</label
+          >
+          <input
+            type="text"
+            id="input-manually"
+            style="font-weight: bold; text-transform: uppercase"
+          />
+        </div>
+        <button id="generate">Get Registration Number</button>
+      </section>
+
+      <section class="section-registration">
+        <div class="automatical">
+          <div class="registration-plate">
+            <div class="plate-logo">
+              <p>FIN</p>
+              <img src="media/eu.png" alt="eu-logo" />
+            </div>
+            <p id="registration-number">###-###</p>
+          </div>
+        </div>
+        <button id="proceedOrAvailability" class="hide">Proceed</button>
+        <div class="result-txt"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
